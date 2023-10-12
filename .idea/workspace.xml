@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14dfe9f4-1b53-4a62-89e9-31cb7f7a7e31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOPUppgift2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/Readfile.java" afterDir="false" />
+    <list default="true" id="14dfe9f4-1b53-4a62-89e9-31cb7f7a7e31" name="Changes" comment="Readfile test.">
+      <change afterPath="$PROJECT_DIR$/Test/Gym/KundTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gym/Kund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Readfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,7 +32,9 @@
   "associatedIndex": 0
 }]]></component>
   <component name="ProjectId" id="2WfKj8033brx6Vf13PQ6IjWF3wO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -67,7 +66,23 @@
       <recent name="Gym" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReadfileTest.separateStringTest">
+    <configuration name="ReadfileTest.separateStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOPUppgift2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gym.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Gym" />
+      <option name="MAIN_CLASS_NAME" value="Gym.ReadfileTest" />
+      <option name="METHOD_NAME" value="separateStringTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReadfileTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOPUppgift2" />
       <extension name="coverage">
@@ -86,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReadfileTest.separateStringTest" />
         <item itemvalue="JUnit.ReadfileTest.testReadFile" />
       </list>
     </recent_temporary>
@@ -98,12 +114,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697118335170</updated>
-      <workItem from="1697118336190" duration="4659000" />
+      <workItem from="1697118336190" duration="8875000" />
     </task>
+    <task id="LOCAL−00001" summary="Readfile test.">
+      <option name="closed" value="true" />
+      <created>1697126050790</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1697126050790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Readfile test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Readfile test." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

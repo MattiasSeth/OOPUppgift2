@@ -9,9 +9,6 @@ import java.util.Scanner;
 public class Readfile {
 
 
-    // LocalDate ld = LocalDate.parse(sc.next());
-
-
 
     public void readFile (ArrayList<String> stringArray, ArrayList<LocalDate> dateArray) throws FileNotFoundException {
 
@@ -24,4 +21,14 @@ public class Readfile {
             }
         }
     }
+
+    public String[] separateString(String idName){
+        String[] resultArray = idName.split(",");
+        for (int i=0; i<resultArray.length; i++)
+            resultArray[i] = resultArray[i].trim();
+        return resultArray;
+    }
+
+
+
 }

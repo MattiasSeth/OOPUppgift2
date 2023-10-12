@@ -43,4 +43,20 @@ class ReadfileTest {
         Assertions.assertEquals(expectedDate2, dateArray.get(8));
     }
 
+
+    @Test
+    public void separateStringTest(){
+        String inData = "7703021234, Alhambra Aromes";
+        String expectedId = "7703021234";
+        String expectedName = "Alhambra Aromes";
+        String nameNotTrimed = " Alhambra Aromes";
+
+        String[] stringArray=rf.separateString(inData);
+
+        Assertions.assertEquals(expectedId, stringArray[0]);
+        Assertions.assertEquals(expectedName, stringArray[1]);
+
+        Assertions.assertNotEquals(stringArray[0],nameNotTrimed);
+    }
+
 }
