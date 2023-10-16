@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14dfe9f4-1b53-4a62-89e9-31cb7f7a7e31" name="Changes" comment="Readfile test.">
-      <change afterPath="$PROJECT_DIR$/Test/Gym/KundTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/Kund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/OOP2/GymTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OOP2/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Readfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/KundTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/ReadfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Kund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Readfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2WfKj8033brx6Vf13PQ6IjWF3wO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,6 +51,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -63,37 +68,83 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="OOP2" />
       <recent name="Gym" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReadfileTest.separateStringTest">
-    <configuration name="ReadfileTest.separateStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GymTest.checkMembershipStatus">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOP2.Main" />
       <module name="OOPUppgift2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Gym.*" />
+          <option name="PATTERN" value="OOP2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Gym" />
-      <option name="MAIN_CLASS_NAME" value="Gym.ReadfileTest" />
-      <option name="METHOD_NAME" value="separateStringTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GymTest.addCustomerFromFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOPUppgift2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OOP2" />
+      <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
+      <option name="METHOD_NAME" value="addCustomerFromFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadfileTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GymTest.checkMembership" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOPUppgift2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Gym.*" />
+          <option name="PATTERN" value="OOP2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Gym" />
-      <option name="MAIN_CLASS_NAME" value="Gym.ReadfileTest" />
-      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="PACKAGE_NAME" value="OOP2" />
+      <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
+      <option name="METHOD_NAME" value="checkMembership" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GymTest.checkMembershipStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOPUppgift2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OOP2" />
+      <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
+      <option name="METHOD_NAME" value="checkMembershipStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GymTest.getCustoemrDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOPUppgift2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OOP2" />
+      <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
+      <option name="METHOD_NAME" value="getCustoemrDateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,8 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReadfileTest.separateStringTest" />
-        <item itemvalue="JUnit.ReadfileTest.testReadFile" />
+        <item itemvalue="JUnit.GymTest.checkMembershipStatus" />
+        <item itemvalue="JUnit.GymTest.checkMembership" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GymTest.getCustoemrDateTest" />
+        <item itemvalue="JUnit.GymTest.addCustomerFromFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697118335170</updated>
       <workItem from="1697118336190" duration="8875000" />
+      <workItem from="1697439837013" duration="12569000" />
     </task>
     <task id="LOCAL−00001" summary="Readfile test.">
       <option name="closed" value="true" />
@@ -137,13 +192,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Test/Gym/ReadfileTest.java</url>
+          <url>file://$PROJECT_DIR$/Test/OOP2/ReadfileTest.java</url>
           <line>20</line>
-          <properties class="Gym.ReadfileTest" method="testReadFile">
+          <properties class="OOP2.ReadfileTest" method="testReadFile">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Test/OOP2/GymTest.java</url>
+          <line>120</line>
+          <properties class="OOP2.GymTest" method="checkMembershipStatus">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,20 +1,15 @@
-package Gym;
+package OOP2;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
-import java.math.BigInteger;
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ReadfileTest {
 
-
+    /*
     Readfile rf = new Readfile();
 
     @Test
@@ -58,5 +53,5 @@ class ReadfileTest {
 
         Assertions.assertNotEquals(stringArray[0],nameNotTrimed);
     }
-
+    */
 }

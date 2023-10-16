@@ -1,4 +1,4 @@
-package Gym;
+package OOP2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Readfile {
 
-
+    /*
 
     public void readFile (ArrayList<String> stringArray, ArrayList<LocalDate> dateArray) throws FileNotFoundException {
 
@@ -29,6 +29,6 @@ public class Readfile {
         return resultArray;
     }
 
-
+    */
 
 }

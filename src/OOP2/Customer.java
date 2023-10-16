@@ -1,12 +1,22 @@
-package Gym;
+package OOP2;
 
 import java.time.LocalDate;
 
-public class Kund {
+public class Customer {
 
     private String name;
     private String id;
     private LocalDate membershipDate;
+
+    public Customer () {
+
+    }
+
+    public Customer (String name, String id, LocalDate membershipDate){
+        setId(id);
+        setName(name);
+        setMembershipDate(membershipDate);
+    }
 
     public String getName() {
         return name;
@@ -26,6 +36,11 @@ public class Kund {
 
     public LocalDate getMembershipDate() {
         return membershipDate;
+    }
+
+    public LocalDate stringToDate (String date){
+        LocalDate result = LocalDate.parse(date);
+        return result;
     }
 
     public void setMembershipDate(LocalDate membershipDate) {
