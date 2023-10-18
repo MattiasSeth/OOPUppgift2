@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14dfe9f4-1b53-4a62-89e9-31cb7f7a7e31" name="Changes" comment="Readfile test.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/OOP2/GymTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OOP2/Gym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="14dfe9f4-1b53-4a62-89e9-31cb7f7a7e31" name="Changes" comment="Membershipstatus = funkar!">
+      <change afterPath="$PROJECT_DIR$/Test/OOP2/IoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OOP2/Io.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/KundTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/CustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/ReadfileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Kund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Readfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Readfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/OOP2/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/CustomerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/OOP2/GymTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/OOP2/GymTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/OOP2/ReadfileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP2/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP2/Gym.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Gym.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OOP2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OOP2/Readfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <recent name="Gym" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GymTest.checkMembershipStatus">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP2.Main" />
       <module name="OOPUppgift2" />
@@ -102,22 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GymTest.checkMembership" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOPUppgift2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOP2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="OOP2" />
-      <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
-      <option name="METHOD_NAME" value="checkMembership" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GymTest.checkMembershipStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOPUppgift2" />
       <extension name="coverage">
@@ -134,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GymTest.getCustoemrDateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GymTest.gymMemberStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOPUppgift2" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +129,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="OOP2" />
       <option name="MAIN_CLASS_NAME" value="OOP2.GymTest" />
-      <option name="METHOD_NAME" value="getCustoemrDateTest" />
+      <option name="METHOD_NAME" value="gymMemberStringTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IoTest.writePtFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOPUppgift2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOP2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OOP2" />
+      <option name="MAIN_CLASS_NAME" value="OOP2.IoTest" />
+      <option name="METHOD_NAME" value="writePtFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GymTest.checkMembershipStatus" />
-        <item itemvalue="JUnit.GymTest.checkMembership" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.GymTest.getCustoemrDateTest" />
+        <item itemvalue="JUnit.GymTest.checkMembershipStatus" />
         <item itemvalue="JUnit.GymTest.addCustomerFromFileTest" />
+        <item itemvalue="JUnit.GymTest.gymMemberStringTest" />
+        <item itemvalue="JUnit.IoTest.writePtFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697118335170</updated>
       <workItem from="1697118336190" duration="8875000" />
-      <workItem from="1697439837013" duration="12569000" />
+      <workItem from="1697439837013" duration="27648000" />
     </task>
     <task id="LOCAL−00001" summary="Readfile test.">
       <option name="closed" value="true" />
@@ -178,7 +179,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1697126050790</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Membershipstatus = funkar!">
+      <option name="closed" value="true" />
+      <created>1697464004484</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1697464004484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +194,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Readfile test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Readfile test." />
+    <MESSAGE value="Membershipstatus = funkar!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Membershipstatus = funkar!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -202,12 +211,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Test/OOP2/GymTest.java</url>
-          <line>120</line>
+          <line>77</line>
           <properties class="OOP2.GymTest" method="checkMembershipStatus">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/OOP2/IoTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

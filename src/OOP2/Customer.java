@@ -38,11 +38,6 @@ public class Customer {
         return membershipDate;
     }
 
-    public LocalDate stringToDate (String date){
-        LocalDate result = LocalDate.parse(date);
-        return result;
-    }
-
     public void setMembershipDate(LocalDate membershipDate) {
         this.membershipDate = membershipDate;
     }

@@ -15,19 +15,6 @@ public class Gym {
         customerList.add(customer);
     }
 
-    public void readFile (ArrayList<String> stringArray, ArrayList<LocalDate> dateArray)  {
-
-        try (Scanner sc = new Scanner(new File("C:\\Users\\harry\\IdeaProjects\\OOPUppgift2\\src\\Customer.txt")); ) {
-            while (sc.hasNext()){
-                String tempString = sc.nextLine();
-                LocalDate date = LocalDate.parse(sc.nextLine());
-                stringArray.add(tempString);
-                dateArray.add(date);
-            }
-        } catch (FileNotFoundException e){
-            System.out.println("Fel fil!");
-        }
-    }
 
     public String[] separateString(String idName){
         String[] resultArray = idName.split(",");
@@ -45,20 +32,7 @@ public class Gym {
         }
     }
 
-    public StringBuilder CustomerBuilder(){
-        StringBuilder sb = new StringBuilder();
-        for (int i=0; i<customerList.size(); i++){
-            sb.append("Name: " + customerList.get(i).getName() +" Date: " +customerList.get(i).getMembershipDate() + " Id: " + customerList.get(i).getId() + "\n");
-        }
-        return sb;
-    }
-
-    public void printCustomer (StringBuilder sb){
-        System.out.println(sb);
-    }
-
-    public LocalDate getCustomerDate(String nameOrId){
-
+    public LocalDate getCustomerDate (String nameOrId){  // retunerar medlemsdatum
         for (int i=0; i<customerList.size(); i++){
             if (customerList.get(i).getName().equalsIgnoreCase(nameOrId) || customerList.get(i).getId().equalsIgnoreCase(nameOrId)){
                 return customerList.get(i).getMembershipDate();
@@ -67,21 +41,36 @@ public class Gym {
         return null;
     }
 
-    public String getMembershipStatus (LocalDate membershipDate){
-
+    public boolean getMembershipStatus (String nameOrId){   // medlem, tidigare medlem, ej medlem
         try {
+            LocalDate membershipDate = getCustomerDate(nameOrId);
             LocalDate ld = LocalDate.now();
             Period period = Period.between(membershipDate,ld);
             if (period.getYears() > 0){
-                return "före detta kund";
-            }else
-                return "nuvarande medlem";
+                System.out.println("före detta kund");
+                return false;
+            }else {
+                System.out.println("nuvarande medlem");
+                return true;
+            }
 
         }catch (NullPointerException e) {
-            return "obehörig";
+            System.out.println("obehörig");
+            return false;
 
         }
     }
 
+    public String memberToString(String nameOrId) {
+        String result = "";
 
+        for (int i=0; i<customerList.size(); i++){
+            if (customerList.get(i).getName().equalsIgnoreCase(nameOrId) || customerList.get(i).getId().equalsIgnoreCase(nameOrId)){
+                LocalDate ld = LocalDate.now();
+                result = customerList.get(i).getName()+", "+ customerList.get(i).getId() + " " +ld;
+                break;
+            }
+        }
+        return result;
+    }
 }
