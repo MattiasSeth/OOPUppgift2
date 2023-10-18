@@ -13,7 +13,7 @@ public class Main {
         ArrayList<LocalDate> dateArray = new ArrayList<>();
         io.readFile(stringArray,dateArray);
 
-        bestGymEver.addCustomerFromFile(stringArray, dateArray);
+        bestGymEver.addCustomer(stringArray, dateArray);
 
         String userInputString = io.input();
         boolean gymMember = bestGymEver.getMembershipStatus(userInputString);

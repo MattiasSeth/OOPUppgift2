@@ -34,7 +34,7 @@ public class Io {
         try (PrintWriter p = new PrintWriter(new BufferedWriter(new FileWriter(path, true)));) {
             p.println(nameIdDate);
         }catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Wrong file path!");
         }
     }
 

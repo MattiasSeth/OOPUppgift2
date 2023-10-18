@@ -3,10 +3,10 @@ package OOP2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class GymTest {
 
@@ -26,26 +26,28 @@ class GymTest {
 
         Assertions.assertEquals(expectedId, stringArray[0]);
         Assertions.assertEquals(expectedName, stringArray[1]);
-
         Assertions.assertNotEquals(stringArray[0],nameNotTrimed);
 
-        System.out.println(stringArray[0]);
-        System.out.println(stringArray[1]);
+        //System.out.println(stringArray[0]);
+        //System.out.println(stringArray[1]);
     }
 
     @Test
-    public void addCustomerFromFileTest()  {
+    public void addCustomerTest()  {
         ArrayList<String> stringArray = new ArrayList<>();
         ArrayList<LocalDate> dateArray = new ArrayList<>();
         i.readFile(stringArray, dateArray);
-        g.addCustomerFromFile(stringArray, dateArray);
+        g.addCustomer(stringArray, dateArray);
 
-        LocalDate ld = LocalDate.now();
-        String expectedString = "Greger Ganache, 7512166544 "+ld;
-        String result = g.memberToString("7512166544");
+        LocalDate expectedDate = LocalDate.of(2023, 3,23);
+        String expectedName = "Greger Ganache";
+        String expectedId = "7512166544";
+
+        Assertions.assertEquals(expectedId, g.getCustomerId("Greger Ganache"));
+        Assertions.assertEquals(expectedDate,g.getCustomerDate("7512166544"));
+        Assertions.assertEquals(expectedName,g.getCustomerName("7512166544"));
 
 
-        Assertions.assertEquals(result, expectedString);
     }
 
     @Test
@@ -53,7 +55,7 @@ class GymTest {
         ArrayList<String> stringArray = new ArrayList<>();
         ArrayList<LocalDate> dateArray = new ArrayList<>();
         i.readFile(stringArray, dateArray);
-        g.addCustomerFromFile(stringArray, dateArray);
+        g.addCustomer(stringArray, dateArray);
 
         String idTest = "9110261234"; // Liu Lingren 2022-02-15
         String nameTest = "Hilmer Heur"; // 2019-08-18
@@ -79,7 +81,7 @@ class GymTest {
         ArrayList<String> stringArray = new ArrayList<>();
         ArrayList<LocalDate> dateArray = new ArrayList<>();
         i.readFile(stringArray, dateArray);
-        g.addCustomerFromFile(stringArray, dateArray);
+        g.addCustomer(stringArray, dateArray);
 
         LocalDate ld = LocalDate.now();
         String customer1 = "Hilmer Heur"; // 2019-08-18
@@ -105,7 +107,7 @@ class GymTest {
         ArrayList<String> stringArray = new ArrayList<>();
         ArrayList<LocalDate> dateArray = new ArrayList<>();
         i.readFile(stringArray, dateArray);
-        g.addCustomerFromFile(stringArray, dateArray);
+        g.addCustomer(stringArray, dateArray);
 
         LocalDate ld = LocalDate.now();
         String expectedString = "Greger Ganache, 7512166544 "+ld;
@@ -119,4 +121,10 @@ class GymTest {
 
     }
 
+    @Test
+    public void CatchNullPointerExceptionTest (){
+        boolean result = g.getMembershipStatus(null);
+        assertFalse(result);
+        assertTrue(!result);
+    }
 }

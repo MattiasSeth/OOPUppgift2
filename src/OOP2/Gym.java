@@ -1,11 +1,8 @@
 package OOP2;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Gym {
 
@@ -24,12 +21,28 @@ public class Gym {
     }
 
 
-    public void addCustomerFromFile (ArrayList<String> stringArray, ArrayList<LocalDate> dateArray){
+    public void addCustomer(ArrayList<String> stringArray, ArrayList<LocalDate> dateArray){
         for (int i=0; i<stringArray.size(); i++){
             String[] tempArray = separateString(stringArray.get(i));
             Customer c = new Customer(tempArray[1],tempArray[0],dateArray.get(i));
             addCustomer(c);
         }
+    }
+    public String getCustomerId (String nameOrId){
+        for (int i=0; i<customerList.size(); i++){
+            if (customerList.get(i).getName().equalsIgnoreCase(nameOrId) || customerList.get(i).getId().equalsIgnoreCase(nameOrId)){
+                return customerList.get(i).getId();
+            }
+        }
+        return null;
+    }
+    public String getCustomerName (String nameOrId){
+        for (int i=0; i<customerList.size(); i++){
+            if (customerList.get(i).getName().equalsIgnoreCase(nameOrId) || customerList.get(i).getId().equalsIgnoreCase(nameOrId)){
+                return customerList.get(i).getName();
+            }
+        }
+        return null;
     }
 
     public LocalDate getCustomerDate (String nameOrId){  // retunerar medlemsdatum

@@ -59,25 +59,27 @@ class IoTest {
 
     @Test
     public void writePtFileTest (){
-        String printString = "Bear Belle : 8204021234 : 2019-12-02";
-        String printString2 = "Chamade Coriola - 2018-03-12 - 8512021234";
-        String readString = "";
-        String readString2 = "";
-        String testPath = "C:\\Users\\harry\\IdeaProjects\\OOPUppgift2\\src\\PT_File.txt";
+        String printString = "Mattias";
+        String printString2 = "Seth";
+        String testPath = "C:\\Users\\harry\\IdeaProjects\\OOPUppgift2\\src\\PT_TestFile.txt";
 
         i.writePtFile(printString, testPath);
         i.writePtFile(printString2, testPath);
 
+        ArrayList<String> lines = new ArrayList<>();
+
         try (Scanner sc = new Scanner(new File(testPath)); ) {
             while (sc.hasNext()){
-                readString = sc.nextLine();
-                readString2 = sc.nextLine();
+                lines.add(sc.nextLine());
             }
         } catch (FileNotFoundException e){
             System.out.println("Fel fil!");
         }
 
-        Assertions.assertEquals(printString,printString);
+        String readString = lines.get(lines.size() - 2);
+        String readString2 = lines.get(lines.size() - 1);
+
+        Assertions.assertEquals(printString,readString);
         Assertions.assertEquals(printString2,readString2);
     }
 }
